@@ -1,0 +1,15 @@
+{
+  "name": "distributed-task-scheduler-workspace",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "setup": "bash scripts/setup.sh",
+    "dev": "bash scripts/dev.sh",
+    "check": "bash scripts/check.sh",
+    "dev:backend": "cd backend && mix run --no-halt",
+    "dev:frontend": "cd frontend && npm run dev",
+    "build:frontend": "cd frontend && npm run build",
+    "typecheck": "cd frontend && npx tsc --noEmit",
+    "compile:backend": "cd backend && mix compile"
+  }
+}
